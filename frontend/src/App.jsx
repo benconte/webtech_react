@@ -46,7 +46,7 @@ function App() {
         <Route path="/register" element={<Register1 />} />
         <Route path="/studentDashboard" element={<StudentDashboard />} />
         <Route path="/teacherDashboard" element={<TeacherDashboard />} />
-        <Route path="/forgotPassword" element={<ForgotPassword />} />
+        {/* <Route path="/forgotPassword" element={<ForgotPassword />} /> */}
         <Route path="/resetPassword/:token" element={<ResetPassword />} />
         <Route path="/admin/download/users" element={<DownloadUsers />} />
         <Route path="/files/upload" element={<FileUpload />} />
