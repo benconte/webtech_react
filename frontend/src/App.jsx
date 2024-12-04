@@ -8,7 +8,7 @@ import Login1 from './components/Login1';
 import Register1 from './components/Register1';
 import StudentDashboard from './components/StudentDashboard';
 import TeacherDashboard from './components/TeacherDashboard';
-import ForgotPassword from './components/forgotPassword';
+// import ForgotPassword from './components/forgotPassword';
 import ResetPassword from './components/resetPassword';
 import AdminDashboard from './components/AdminDashboard';
 // import ProtectedRoute from './components/ProtectedRoute';
