@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-/* eslint-disable no-unused-vars */
 import React, { useEffect} from 'react';
 import { Link, useNavigate  } from 'react-router-dom';
 import backgroundImage from '../assets/assets/image/img1.png';

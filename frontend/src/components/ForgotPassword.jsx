@@ -1,5 +1,3 @@
- 
-/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
@@ -11,22 +9,22 @@ const ForgotPassword = () => {
   
 
   const handleSubmit = async (e) => {
-    // e.preventDefault();
-    // try {
-    //     const response = await authService.forgotPassword(email);
-    //     setMessage('Success! Reset link has been sent to your email. Please check your inbox.');
-    //     setEmail('');
-    // } catch (error) {
-    //     console.log('Request data:', { email });
+    e.preventDefault();
+    try {
+        const response = await authService.forgotPassword(email);
+        setMessage('Success! Reset link has been sent to your email. Please check your inbox.');
+        setEmail('');
+    } catch (error) {
+        console.log('Request data:', { email });
         
-    //     if (error.response) {
-    //         setMessage(error.response.data.error || 'Server error. Please try again.');
-    //     } else if (error.request) {
-    //         setMessage('Network error. Please check your connection.');
-    //     } else {
-    //         setMessage('An unexpected error occurred. Please try again.');
-    //     }
-    // }
+        if (error.response) {
+            setMessage(error.response.data.error || 'Server error. Please try again.');
+        } else if (error.request) {
+            setMessage('Network error. Please check your connection.');
+        } else {
+            setMessage('An unexpected error occurred. Please try again.');
+        }
+    }
 };
 
   
@@ -43,7 +41,7 @@ const ForgotPassword = () => {
       margin: 0
     }}>
       <h1>Forgot Password</h1>
-      {/* {message && <div style={{ margin: '10px 0' }}>{message}</div>}
+      {message && <div style={{ margin: '10px 0' }}>{message}</div>}
       
       <form onSubmit={handleSubmit} style={{
         backgroundColor: '#fff',
@@ -89,7 +87,7 @@ const ForgotPassword = () => {
         }}>
           Remembered your password? Log in
         </Link>
-      </p> */}
+      </p>
     </div>
   );
 };

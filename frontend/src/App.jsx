@@ -1,6 +1,4 @@
 
-/* eslint-disable no-unused-vars */
-
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Homepage1 from './components/Homepage1';
@@ -8,7 +6,7 @@ import Login1 from './components/Login1';
 import Register1 from './components/Register1';
 import StudentDashboard from './components/StudentDashboard';
 import TeacherDashboard from './components/TeacherDashboard';
-// import ForgotPassword from './components/forgotPassword';
+import ForgotPassword from './components/forgotPassword';
 import ResetPassword from './components/resetPassword';
 import AdminDashboard from './components/AdminDashboard';
 // import ProtectedRoute from './components/ProtectedRoute';
@@ -46,7 +44,7 @@ function App() {
         <Route path="/register" element={<Register1 />} />
         <Route path="/studentDashboard" element={<StudentDashboard />} />
         <Route path="/teacherDashboard" element={<TeacherDashboard />} />
-        {/* <Route path="/forgotPassword" element={<ForgotPassword />} /> */}
+        <Route path="/forgotPassword" element={<ForgotPassword />} />
         <Route path="/resetPassword/:token" element={<ResetPassword />} />
         <Route path="/admin/download/users" element={<DownloadUsers />} />
         <Route path="/files/upload" element={<FileUpload />} />
